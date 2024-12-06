@@ -1,0 +1,32 @@
+/*
+Author: Jared Nelson
+Date: 11/29/2024
+*/
+
+.instructions-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.instructions-container h2 {
+    text-align: center;
+    color: #333;
+}
+ol {
+    padding-left: 20px;
+}
+li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+}
+.section-title {
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;
+    text-align: center;
+}

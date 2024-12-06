@@ -1,0 +1,59 @@
+/*
+Author: Jared Nelson
+Date: 11/29/2024
+*/
+
+/* About Us */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section-title {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.section {
+    background-color: #FF6F61;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.section img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.section h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+.section p {
+    font-size: 16px;
+}
+
+/* Mobile view - stack sections vertically */
+@media (max-width: 768px) {
+    .sections {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

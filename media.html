@@ -6,9 +6,10 @@
 
 <html lang="en">
   <head>
-    <title>HeatWave</title>
+    <title>Media - HeatWave</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
@@ -55,16 +56,36 @@
           <li><a href="contact.html">Contact Us</a></li>        </ul>
       </nav>
 
-      <div id="hero" class="tablet-desktop">
-        <img src="images/hero.jpg" alt="three hair dryers layed out on a background">
-      </div>
-
       <!-- Use the main area to add the main content of the webpage -->
       <main>
-        <h1>Blow Away Ordinary!</h1>
-        <p>Welcome to Heatwave, where we "Blow Away Ordinary."</p>
-        <p>Our cutting-edge hair dryers are designed to deliver exceptional performance, superior speed, and salon-quality results every time. With advanced technology and sleek design, Heatwave ensures your hair drying experience is never ordinary.</p>
-        <p>Explore our collection and discover the power to transform your hair care routine today!</p>
+        <div class="form-container">
+          <h2>Submit Your Media Coverage</h2>
+          <form>
+              <label for="publication">Name of Publication</label>
+              <input type="text" id="publication" name="publication" required placeholder="Enter the name of the publication">
+  
+              <label for="coverage-date">Date of Coverage</label>
+              <input type="date" id="coverage-date" name="coverage-date" required>
+  
+              <label for="media-type">Type of Media</label>
+              <select id="media-type" name="media-type" required>
+                  <option value="" disabled selected>Select media type</option>
+                  <option value="article">Article</option>
+                  <option value="video">Video</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="social-media">Social Media</option>
+                  <option value="other">Other</option>
+              </select>
+  
+              <label for="media-url">Media URL</label>
+              <input type="url" id="media-url" name="media-url" required placeholder="Enter the URL of the media coverage">
+  
+              <label for="description">Description of Coverage</label>
+              <textarea id="description" name="description" rows="4" placeholder="Provide a brief description of the coverage"></textarea>
+  
+              <button type="submit">Submit Coverage</button>
+          </form>
+      </div>
       </main>
 
       <!-- Use the footer area to add webpage footer content -->
